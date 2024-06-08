@@ -9,7 +9,7 @@ with open('Resources.html', 'r') as file:
 soup = BeautifulSoup(html_content, "html.parser")
 
 colors = []
-for row in soup.find_all('tr')[1:]:   # Skipped the header
+for row in soup.find_all('tr')
     day_color = row.find_all('td')[1].text.strip().split(', ')
     colors.extend(day_color)
 
